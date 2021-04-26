@@ -1,0 +1,77 @@
+body {
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+    
+}
+.container {
+    float: right;
+    box-sizing: border-box;
+    margin-right: 50px;
+    margin-top: 150px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-image: url(https://media.discordapp.net/attachments/817472442712064010/835679309959921671/controle.png?width=292&height=473);
+    background-size: 218px;
+    width: 218px;
+    height: 350px;
+    position: relative;
+    padding: 10px;
+    
+}
+.back-container{
+  position: relative;
+    left: 23px;
+    top: 25px;
+    border-radius: 10px;
+    width: 150px;
+    height: 270px;
+    background-color: #0B0340;
+}
+#ulnam{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #150773;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .button:hover {background-color:#030226}
+  
+  .button:active {
+    background-color: #030226;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+
+  .botaum{
+    padding: 10px;
+  }
+  .botaer{
+    position: relative;
+    
+    left: 30%;
+  }
+.botair{
+    width: 100%;
+}
