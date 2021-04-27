@@ -40,33 +40,22 @@ Citizen.CreateThread(function()
 end)
 
 
---[[Citizen.CreateThread(function()
-	while true do 
-		local xap = 100
-		local player = GetPlayerPed(-1)
-		local vcar = GetVehiclePedIsIn(player,false)
-		local susp = GetVehicleSuspensionHeight(vcar)
-		local rod = GetVehicleWheelWidth(vcar)
-		if vcar > 0 then 
-			xap = 5
-			print(susp,"S")
-			debig(rod,5,0.1,0.4,0.4,255,155,55,180)
-			debig(susp,5,0.1,0.6,0.4,25,255,55,180)
-			--
-
-		end
-		Citizen.Wait(xap)
-	end
-end)]]
-
-RegisterCommand("rod",function(source,args)
+-- usar entre 0.49 e 0.99
+RegisterCommand("largura",function(source,args)
 	local ped =  GetPlayerPed(-1)
 	local vehicle = GetVehiclePedIsIn(ped)
 	if IsEntityAVehicle(vehicle) then
 		SetVehicleWheelWidth(vehicle,tonumber(args[1]))
 	end
 end)
-
+-- usar entre 0.29 e 0.89
+RegisterCommand("tamanho",function(source,args)
+	local ped =  GetPlayerPed(-1)
+	local vehicle = GetVehiclePedIsIn(ped)
+	if IsEntityAVehicle(vehicle) then
+		SetVehicleWheelSize(vehicle,tonumber(args[1]))
+	end
+end)
 
 
 RegisterNUICallback("Close",function()
