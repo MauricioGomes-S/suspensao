@@ -1,7 +1,7 @@
 local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
-MTclient = Tunnel.getInterface("arena")
+MTclient = Tunnel.getInterface("suspensao")
 Mts = {} 
 Tunnel.bindInterface("suspensao", Mts) 
 
